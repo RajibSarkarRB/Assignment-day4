@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Using a question mark operator ?</h2>
+     <h2>Using OR ||</h2>
+     <script>
+        function Age(age) {
+            return (age > 18) ? true : confirm('Did parents allow you?');
+        }
+        Age(40);
+     
+
+    
+        function checkAge(age) {
+            return (age > 18) || confirm('Did parents allow you?');
+        }
+        checkAge(40);
+     
+
+     
+        let num;
+
+        do {
+            num = prompt("Enter a number greater than 100?", 0);
+        } while (num <= 100 && num);
+     </script>
+</body>
+</html>
